@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right bottom, rgb(0, 183, 255), rgb(234, 0, 255));
+}
+
+.wrapper{
+    border: 3px solid rgb(201, 201, 201);
+    border-radius: 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+    padding: 1em 2em;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2em;
+    color: rgb(109, 153, 255);
+}
+
+#choices{
+    gap: 1em;
+    display: flex;
+}
+
+#choices button{
+    padding: 0.5em 1.2em;
+    border-radius: 0.5em;
+    font-size: 3em;
+    border: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#choices button:hover{
+    background-color: white;
+    border: 3px solid rgb(109, 153, 255);
+    transform: scale(1.05);
+}
+
+#player-choice, 
+#computer-choice{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+#resultDisplay{
+    font-size: 3.5em;
+    border: 3px solid rgb(109, 153, 255);
+    border-radius: 0.5em;
+    padding: 10px 50px;
+}
